@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* General */
+.body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+
+}
+
+.container {
+    max-width: 1135px;
+    margin: 0px auto;
+}
+
+/* header */
+.header {
+    background-color: rgb(29, 29, 29);
+    padding: 9px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.brandname {
+    color: #fe5900;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+
+}
+
+.navbar a:hover {
+    color: #fe5900;
+}
+
+.BUTTONS a {
+    text-decoration: none;
+    padding: 5px 12px;
+    margin: 7px;
+    font-size: 18px;
+    color: white;
+    background-color: #fe5900;
+    border-radius: 25px;
+}
+
+.BUTTONS a:hover {
+    background-color: #1d1d1d;
+    border: 2px solid #fe5900;
+    color: #fe5900;
+}
+
+/* main section one here */
+.float-section {
+    background-color: #f6f6f6;
+    height: 500px;
+    padding: 35px 0px;
+
+}
+.clearfix::before, .clearfix::after{
+    content: '';
+    display: block;
+}
+.clearfix::after{
+    clear: both;
+}
+.sect-title {
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+.sect-title::first-letter {
+    font-size: 200%;
+    color: #fe5900;
+}
+.outerbox {
+    float: left;
+    width: 332px;
+    height: 300px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px auto;
+    margin-right: 22px;
+    text-align: center;
+}
+.boxes{
+    border: 2px solid black;
+    width: 100px;
+    height: 80px;
+    margin: 0px auto;
+    color: white;
+    margin-bottom: 10px;
+
+}
+.bx1 {
+    background-color: #1d1d1d;
+
+}
+.bx2{
+    background-color: #fe5900;
+
+}
+#box2 {
+    float: right;
+    margin: 0px;
+}
+#box-left {
+    float: left;
+}
