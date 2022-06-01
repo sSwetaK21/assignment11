@@ -9,10 +9,41 @@
     font-size: 20px;
 
 }
+body::-webkit-scrollbar {
+    width: 13px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 18px 20px 3px #1d1d1d;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #fe5900;
+    border-radius: 10px;
+}
 
 .container {
     max-width: 1135px;
     margin: 0px auto;
+}
+hr {
+    border: none;
+   border-top: 3px dashed black; 
+   color: black;
+   overflow: visible;
+   text-align: center;
+   height: 5px;
+   background: #DDDDDD;
+
+}
+hr::after{
+   content: "***";
+   background: #DDDDDD;
+   position: relative;
+   top: -9px;
+   font-size: 23px;
+
 }
 
 /* header */
@@ -64,18 +95,22 @@
 
 /* main section one here */
 .float-section {
-    background-color: #f6f6f6;
+    background-color: #DDDDDD;
     height: 500px;
     padding: 35px 0px;
 
 }
-.clearfix::before, .clearfix::after{
+
+.clearfix::before,
+.clearfix::after {
     content: '';
     display: block;
 }
-.clearfix::after{
+
+.clearfix::after {
     clear: both;
 }
+
 .sect-title {
     text-transform: capitalize;
     text-align: center;
@@ -86,6 +121,7 @@
     font-size: 200%;
     color: #fe5900;
 }
+
 .outerbox {
     float: left;
     width: 332px;
@@ -96,7 +132,8 @@
     margin-right: 22px;
     text-align: center;
 }
-.boxes{
+
+.boxes {
     border: 2px solid black;
     width: 100px;
     height: 80px;
@@ -105,18 +142,80 @@
     margin-bottom: 10px;
 
 }
+
 .bx1 {
     background-color: #1d1d1d;
 
 }
-.bx2{
+
+.bx2 {
     background-color: #fe5900;
 
 }
+
 #box2 {
     float: right;
     margin: 0px;
 }
+
 #box-left {
     float: left;
+}
+
+
+/* realtive section here */
+.p-relative{
+    background-color: #DDDDDD;
+    height: 800px;
+    padding: 35px 0px;
+}
+#box-a {
+    position: relative;
+    left: 40px;
+    bottom: -20px;
+}
+
+#boxA {
+    position: absolute;
+}
+
+.Scroll {
+    overflow: scroll;
+}
+
+.Scroll::-webkit-scrollbar {
+    width: 13px;
+}
+
+.Scroll::-webkit-scrollbar-track {
+    box-shadow: inset 18px 20px 3px #1d1d1d;
+    border-radius: 10px;
+}
+
+.Scroll::-webkit-scrollbar-thumb {
+    background: #fe5900;
+    border-radius: 10px;
+}
+
+.flexx {
+    width: 756px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section flex */
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item {
+    width: 100px;
+    height: 100px;
+    margin: 3px;
+    border: 2px solid black;
 }
