@@ -96,7 +96,7 @@ hr::after{
 /* main section one here */
 .float-section {
     background-color: #DDDDDD;
-    height: 500px;
+    height: 450px;
     padding: 35px 0px;
 
 }
@@ -114,6 +114,8 @@ hr::after{
 .sect-title {
     text-transform: capitalize;
     text-align: center;
+    padding-bottom: 20px;
+
 
 }
 
@@ -206,16 +208,98 @@ hr::after{
 }
 
 /* section flex */
+.section-flex{
+    background-color: #DDDDDD;
+    padding: 20px;
+
+}
 .flexbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px 0px;
+    text-align: center;
+
 }
 .item {
-    width: 100px;
-    height: 100px;
-    margin: 3px;
-    border: 2px solid black;
+    width: 178px;
+    height: 150px;
+    margin: 14px;
+    border: 5px solid black;
+}
+.item1 {
+    width: 120px;
+    height: 120px;
+    margin: 14px;
+    border: 5px solid black;
+}
+
+.flexbox1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    text-align: center;
+
+
+}
+.flexbox2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+
+}
+.flexbox2 .bx3 {
+    width: 300px;
+}
+ 
+.flexbox3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0px;
+
+}
+.footer{
+    background-color: #1d1d1d;
+    
+}
+.nav-foot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer .nav-links {
+    color: #fe5900;
+    font-size: 36px;
+    padding: 10px;
+}
+.footer .nav-links:hover{
+    color: white;
+    font-size: 40px;
+}
+.back-to-top-wrapper {
+    position: fixed;
+    bottom: 12%;
+    right: 0px;
+}
+
+.back-to-top-link {
+    display: inline-block;
+    width: 42px;
+    height: 31px;
+    padding: 3px;
+    text-align: center;
+    color: #fe5900;
+    font-size: 32px;
+    line-height: 21px;
+    background-color: black;
+    border-radius: 20px 0px 0px 20px;
 }
